@@ -31,12 +31,13 @@ public class ArithmeticProgram {
 		int result1 = number1 * number2;
 		double result2 = number1 * n;
 		double result3 = n * n;
-
-		System.out.printf("\n%d * %d = %d\n%d * %.4f = %.3f\n%.4f * %.4f = %f\n",
-                number1, number2, result1,
-                number1, n, result2,
-                n, n, result3);
-
+	
+	
+		System.out.println();
+		
+		System.out.println(number1 +" * " + number2 + " = " + result1);
+		System.out.println(number1 +" * " + n + " = " + result2);
+		System.out.println(n +" * " + n + " = " + result3);
 		scanner.close();
 	}
 
