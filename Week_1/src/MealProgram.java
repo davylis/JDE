@@ -14,7 +14,7 @@ public class MealProgram {
 	public static void main(String[] args) {
 		// Create a scanner object
 		Scanner input = new Scanner(System.in);
-
+		// Using decimalformatter to get two decimals after a dot
 		DecimalFormat twoDecimal = new DecimalFormat("0.00");
 		// input price
 		System.out.print("Enter the price of food: ");
