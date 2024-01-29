@@ -14,10 +14,10 @@ public class SoftDrinks {
 		// Create a scanner object
 		Scanner input = new Scanner(System.in);
 		// input number of students
-		System.out.print("Enter number of students: ");
+		System.out.print("Enter the number of students: ");
 		int students = Integer.parseInt(input.nextLine());
 		// input number of bottles
-		System.out.print("Enter number of bottles: ");
+		System.out.print("Enter the number of bottles: ");
 		int bottles = Integer.parseInt(input.nextLine());
 		// close scanner
 		input.close();
@@ -26,7 +26,6 @@ public class SoftDrinks {
 		int leftOverBottles = bottles % students;
 		// print outcome
 		System.out.println("\nThere will be " + bottlePerStudent + " bottles for each student.");
-		System.out.println("There will be " + leftOverBottles + " bottles for each student.");
+		System.out.println("There will be " + leftOverBottles + " leftover bottles.");
 	}
-
 }
