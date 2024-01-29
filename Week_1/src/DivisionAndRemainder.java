@@ -1,3 +1,10 @@
+/*
+ * Create a program called DivisionAndRemainder that first inputs two integers x and y from the user.
+Then the program should determine if the integers are even or odd. In addition, the program should
+compute the remainder of x / y and the remainder of y / x.
+• You can suppose that the user does not ever enter a zero.
+• Hint: See the arithmetic operators in the course material.
+ */
 import java.util.Scanner;
 
 public class DivisionAndRemainder {
