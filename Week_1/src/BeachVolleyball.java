@@ -35,7 +35,7 @@ public class BeachVolleyball {
 		
 		// print outcome
 		DecimalFormat df = new DecimalFormat("0.00");
-		System.out.println("Each of the " + people + " people should pay " + df.format(rental) + " euros.");
+		System.out.println("\nEach of the " + people + " people should pay " + df.format(rental) + " euros.");
 	}
 	
 	//DoubleReader
