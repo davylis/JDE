@@ -4,7 +4,7 @@ user. Then the program should compute and print the product of the decimal numbe
 the example output
  */
 
-	import java.math.BigDecimal;
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class MultiplicationProgram {
