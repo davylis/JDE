@@ -1,12 +1,11 @@
-
 /*
- * Create a program called PrintNumbers_1 that first inputs an integer from the user. Then the
-program should print integers on a single line as shown in the example output. If there are no
-integers to be printed, the program should not print anything
+ * Create a program called PrintNumbers_2. The program should be a new version of the
+PrintNumbers_1 program. The program should also print the count of numbers it has printed.
  */
+
 import java.util.Scanner;
 
-public class PrintNumbers_1 {
+public class PrintNumbers_2 {
 
 	public static void main(String[] args) {
 		// Create Scanner
@@ -14,14 +13,18 @@ public class PrintNumbers_1 {
 		// input number
 		System.out.print("Enter the middle number: ");
 		int middle = Integer.parseInt(input.nextLine());
-		//scanner closer
+		//Scanner closer
 		input.close();
 		// print numbers
+		int count = 0;
 		for (int i = 1; i <= middle; i++) {
 			System.out.print(i + " ");
+			count++;
 		}
 		for (int j = middle - 1; j >= 1; j--) {
 			System.out.print(j + " ");
+			count++;
 		}
+		System.out.println("\n" + count + " numbers printed");
 	}
 }
