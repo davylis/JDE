@@ -36,7 +36,7 @@ public class MethodsDiscount {
 
 		double result = computePercentage(listPrice, sellingPrice);
 		
-		System.out.print("The discount percentage is " + formatter.format(result) + " %");
+		System.out.print("The discount percentage is " + formatter.format(result) + " %\n");
 
 		scanner.close();
 
