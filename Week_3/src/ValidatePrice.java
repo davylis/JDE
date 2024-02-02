@@ -1,6 +1,10 @@
 
 /*
- * 
+ * Create a program called ValidatePrice that first inputs the product price before VAT from the user.
+Then the program should compute and print the VAT inclusive price with two decimal places as
+shown in the example output. Suppose that the VAT is always 25 %.
+If the program fails to convert the inputted string to a double, it should print "Invalid price!".
+• NB! You should use exception handling in this exercise.
  */
 import java.util.Scanner;
 import java.text.DecimalFormat;
