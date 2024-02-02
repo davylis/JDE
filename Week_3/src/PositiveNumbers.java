@@ -1,9 +1,8 @@
 /*
- * Create a program called PositiveNumbers 
-that first inputs integers from the user until the user
+ * Create a program called PositiveNumbers that first inputs integers from the user until the user
 decides to quit by entering a zero. Then the program should compute and print the average of the
 entered positive integers with one decimal. If the only entered value is a zero, the program should
-print "No positive values"
+print "No positive values".
  */
 import java.util.Scanner;
 
