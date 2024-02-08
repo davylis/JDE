@@ -1,3 +1,14 @@
+/*
+ * First, create a class called ArraysLibrary for storing generic reusable methods. That is, the class is a
+method library class and it does not have the main method. Instead, the class should have the
+following methods: max, min, median, mean, and standardDeviation. Each method should take an
+array of integers as parameter and return the appropriate result.
+Then, create a program called ArraysDeviation that uses methods of the ArraysLibrary class. First,
+the main method should ask the user how many values there are in the sample. Then, the main
+method should input the values from the user and save them to an array. Finally, the program
+should compute the required descriptive statistics from the sample data and display them. See the
+example output for more details.
+ */
 import java.util.Scanner;
 import java.lang.Math;
 
