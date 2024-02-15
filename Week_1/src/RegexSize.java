@@ -14,7 +14,7 @@ public class RegexSize {
 		System.out.print("Enter size: ");
 		String size = input.nextLine();
 
-		if(size.matches("XX[SL]|X[SM]|L|M")) {
+		if(size.matches("XX[SL]|X[SL]|S|M|L")) {
 			System.out.println("Size ok");
 		}else {
 			System.out.println("Invalid size");
