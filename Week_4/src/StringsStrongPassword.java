@@ -12,32 +12,51 @@ characters from at least three different categories. The four categories of char
 following: uppercase letters, lowercase letters, digits, and other characters.
  */
 
-import java.util.Scanner;
-
-public class StringsStrongPassword {
+	import java.util.Scanner;
 	
-	public static boolean checkStrength(String password){	
-		String regex = "^(?=.*[A-ZÅÄÖ])(?=.*[0-9])(?=.*[a-zåäö])[A-Za-z0-9]{8,}$";
-		if(password.matches(regex)){
-			return true;
-		}else {
-		return false;
+	public class StringsStrongPassword {
+		
+		public static boolean checkStrength(String password){	
+			int count = countCategories(password);
+			if(password.length() >= 8 && count >= 3) {
+				return true;
+			}else {
+				return false;
+			}
 		}
 		
-	}
-
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		System.out.print("Enter password: ");
-		String password = input.nextLine();
-		
-		boolean result = checkStrength(password);
-		if(result) {
-			System.out.println("OK");
-		} else if(!result) {
-			System.out.println("Not strong enough!");
+		public static int countCategories(String password) {
+			int count = 0;
+			if(password.matches(".*[A-ZÅÄÖ].*")) {
+				count++;
+			}
+			if(password.matches(".*[a-zåäö].*")){
+				count++;
+				
+			}
+			if(password.matches(".*[0-9].*")) {
+				count++;
+				
+			}
+			if(password.matches(".*[_$&+,:;=?@#|^'<>.*\\s()%!-].*")) {
+				count++;
+				
+			}
+			return count;
 		}
-		input.close();
+	
+		public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+			
+			System.out.print("Enter password: ");
+			String password = input.nextLine();
+			
+			boolean result = checkStrength(password);
+			if(result) {
+				System.out.println("OK");
+			} else if(!result) {
+				System.out.println("Not strong enough!");
+			}
+			input.close();
+		}
 	}
-}
