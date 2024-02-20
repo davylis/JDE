@@ -11,29 +11,20 @@ import java.util.Scanner;
 
 	public class StringsDecimalPart {
 	public static boolean isValidDec(String value) {
-		return value.matches(".*\\d+\\.\\d+.*");
+		return value.matches("\\d+[\\.\\,]\\d+");
 		}
-	
-//	public static int getDecimalLength(String value) {
-//		String[] parts = value.split("\\.");
-//		return parts[1].length();
-//	}
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter a decimal number: ");
-		Double decimal = readDouble(input);
-		
-		DecimalFormat decimalFormat = new DecimalFormat("#.##########");
-		
-		String decString = decimalFormat.format(decimal);
+		String decString = input.nextLine();
 		
 		if(isValidDec(decString)) {
-			int decPartLength = decString.split("\\.")[1].length(); 
+			int decPartLength = decString.split("[\\.\\,]")[1].length(); 
 			System.out.println(decPartLength + " decimal place(s)");
 		} else {
-			System.out.println("Please enter a proper decimal number.");
+			System.out.println("Please enter a proper decimal number");
 		}
 		
 			
@@ -41,9 +32,4 @@ import java.util.Scanner;
 		
 		input.close();
 	}
-
-	private static double readDouble(Scanner input) {
-		return Double.parseDouble(input.nextLine().replace(',', '.'));
-	}
-
 }
