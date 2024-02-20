@@ -18,12 +18,6 @@ public class StringsAnagramOrNot {
 
 	public static boolean isAnagram(String first, String second) {
 
-		if (first.isEmpty() || second.isEmpty())
-			return false;
-
-		if (first.matches(".*[\\d+].*") || second.matches(".*[\\d+].*"))
-			return false;
-
 		first = cleanString(first);
 		char[] arr1 = first.toCharArray();
 		Arrays.sort(arr1);
@@ -33,6 +27,12 @@ public class StringsAnagramOrNot {
 		char[] arr2 = second.toCharArray();
 		Arrays.sort(arr2);
 		second = new String(arr2);
+		
+		if (first.isEmpty() || second.isEmpty())
+			return false;
+
+		if (first.matches(".*[\\d+].*") || second.matches(".*[\\d+].*"))
+			return false;
 
 		return (first.equals(second));
 	}
