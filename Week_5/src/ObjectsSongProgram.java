@@ -17,15 +17,15 @@ class Song {
 		this.year = y;
 	}
 	
-	String getName() {
+	public String getName() {
 		return this.name;
 	}
 	
-	String getArtist() {
+	public String getArtist() {
 		return this.artist;
 	}
 	
-	int getYear() {
+	public int getYear() {
 		return this.year;
 	}
 	
@@ -33,9 +33,9 @@ class Song {
 		return this.name + " (" + this.artist + ", " + this.year + ")"; 
 	}
 	
-	String name;
-	String artist;
-	int year;
+	private String name;
+	private String artist;
+	private int year;
 }
 public class ObjectsSongProgram {
 
@@ -47,7 +47,5 @@ public class ObjectsSongProgram {
 		System.out.println(song1.toString());
 		System.out.println(song2.toString());
 		System.out.println(song3.toString());
-
 	}
-
 }
