@@ -10,33 +10,33 @@ less, not more. This time, do not use an array or ArrayList.
 Finally, the program should print a song list as shown in the example output. In this exercise, use the
 toString method to get data from each Song object to be printed.
  */
-class Song {
-	Song(String n, String a, int y) {
-		this.name = n;
-		this.artist = a;
-		this.year = y;
-	}
-	
-	public String getName() {
-		return this.name;
-	}
-	
-	public String getArtist() {
-		return this.artist;
-	}
-	
-	public int getYear() {
-		return this.year;
-	}
-	
-	public String toString() {
-		return this.name + " (" + this.artist + ", " + this.year + ")"; 
-	}
-	
-	private String name;
-	private String artist;
-	private int year;
-}
+//class Song {
+//	Song(String n, String a, int y) {
+//		this.name = n;
+//		this.artist = a;
+//		this.year = y;
+//	}
+//	
+//	public String getName() {
+//		return this.name;
+//	}
+//	
+//	public String getArtist() {
+//		return this.artist;
+//	}
+//	
+//	public int getYear() {
+//		return this.year;
+//	}
+//	
+//	public String toString() {
+//		return this.name + " (" + this.artist + ", " + this.year + ")"; 
+//	}
+//	
+//	private String name;
+//	private String artist;
+//	private int year;
+//}
 public class ObjectsSongProgram {
 
 	public static void main(String[] args) {

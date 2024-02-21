@@ -13,30 +13,23 @@ public class StringsPalidromeSentence {
 	
 	public static String cleanString(String string) {
 		string = string.toLowerCase();
-		return string.replaceAll("[\\s\\.\\,\\;]", "");
+		return string.replaceAll("[\\s\\.\\,\\;\\?\\!\\'\\\"\\-]", "");
 	}
 
 	public static boolean isPalindrome(String string) {
 
 		string = cleanString(string);
 		
-		System.out.println(string);
-		
-		StringBuilder input = new StringBuilder(string);
-		
+		StringBuilder input = new StringBuilder(string);		
 		input.reverse();
 		
-		System.out.println(input);
-		
-	
 		if (string.isEmpty() || string.matches(".*[\\d+].*")) return false;
-
-		return true;
+		return (string.equals(input.toString()));
 	}
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter string string: ");
+		System.out.print("Enter a string: ");
 		String string = input.nextLine();
 
 		if (isPalindrome(string)) {

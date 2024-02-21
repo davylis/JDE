@@ -19,45 +19,45 @@ class Song {
 		this.artist = a;
 		this.year = y;
 	}
-	
+
 	public String getName() {
 		return this.name;
 	}
-	
+
 	public String getArtist() {
 		return this.artist;
 	}
-	
+
 	public int getYear() {
 		return this.year;
 	}
-	
+
 	public String toString() {
-		return this.name + " (" + this.artist + ", " + this.year + ")"; 
+		return this.name + " (" + this.artist + ", " + this.year + ")";
 	}
-	
+
 	private String name;
 	private String artist;
 	private int year;
 }
+
 public class ObjectsSongArray {
 
 	public static void main(String[] args) {
 		Song song1 = new Song("Easy on me", "Adele", 2021);
 		Song song2 = new Song("Shivers", "Ed Sheeran", 2021);
 		Song song3 = new Song("Holy Ghost Fire", "Larkin Poe", 2020);
+
+	//	Song[] songs = {song1, song2, song3};
 		
 		ArrayList<Song> songs = new ArrayList<Song>();
 		songs.add(song1);
 		songs.add(song2);
 		songs.add(song3);
-		
+
 		System.out.println("=== List of songs ===");
-		for(Song s : songs) {
-			System.out.println(s.getArtist()+": "+s.getName()+" ("+s.getYear()+")");
+		for (Song s : songs) {
+			System.out.println(s.getArtist() + ": " + s.getName() + " (" + s.getYear() + ")");
 		}
-		
-		
-		
 	}
 }
