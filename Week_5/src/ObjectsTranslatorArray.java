@@ -11,24 +11,24 @@ array of WordPairs.
 
 import java.util.Scanner;
 
-class WordPair {
-	WordPair(String eW, String fW) {
-		this.englishWord = eW;
-		this.finnishWord = fW;
-	}
-
-	public String getEnglishWord() {
-		return this.englishWord;
-	}
-
-	public String getFinnishWord() {
-		return this.finnishWord;
-	}
-
-	private String englishWord;
-	private String finnishWord;
-}
-
+//class WordPair {
+//	WordPair(String eW, String fW) {
+//		this.englishWord = eW;
+//		this.finnishWord = fW;
+//	}
+//
+//	public String getEnglishWord() {
+//		return this.englishWord;
+//	}
+//
+//	public String getFinnishWord() {
+//		return this.finnishWord;
+//	}
+//
+//	private String englishWord;
+//	private String finnishWord;
+//}
+//
 public class ObjectsTranslatorArray {
 
 	public static void main(String[] args) {
