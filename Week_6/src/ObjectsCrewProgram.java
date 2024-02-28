@@ -1,3 +1,9 @@
+/*
+ * Suppose that we want to create crews for boat cruises. Each crew can include several sailors
+ * 
+ * Create classes Sailor and Crew as below. These classes should work with the ready-made program
+class.
+ */
 import java.util.ArrayList;
 import java.util.Iterator;
 
