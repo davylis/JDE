@@ -21,7 +21,7 @@ public class ArithmeticProgram {
 		System.out.print("Enter another integer: ");
 		int number2 = scanner.nextInt();
 
-		scanner.nextLine();
+		//scanner.nextLine();
 
 		System.out.print("Enter a decimal number: ");
 		String decimalNumber = scanner.nextLine();

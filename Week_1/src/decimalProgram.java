@@ -7,34 +7,32 @@ output.
 • The program should accept both comma and dot as decimal part separator
  */
 import java.text.DecimalFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class decimalProgram {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		 input.useLocale(Locale.US);
 
 		System.out.print("Enter a decimal number: ");
-		String input1 = input.next(); 
-		double number1 = input.nextDouble();
+		String number1 = input.nextLine();
+		double n1 = parseDecimal(number1);
 
 		System.out.print("Enter a decimal number: ");
-		String input2 = input.next(); 
-		double number2 = input.nextDouble();
+		String number2 = input.nextLine();
+		double n2 = parseDecimal(number2);
 
-		double result = number1 * number2;
+		double result = n1 * n2;
 
 		DecimalFormat formatter = new DecimalFormat("0.00");
 		DecimalFormat formatter2 = new DecimalFormat("0.000000");
 
-		System.out.println("\n" + number1 + " * " + number2 + " = " + formatter.format(result));
-		System.out.println(number1 + " * " + number2 + " = " + formatter2.format(result));
+		System.out.println("\n" + n1 + " * " + n2 + " = " + formatter.format(result));
+		System.out.println(n1 + " * " + n2 + " = " + formatter2.format(result));
 
 		input.close();
 	}
-	private static double parseDecimal(String input) {
+	private static double parseDecimal(String  input) {
             return Double.parseDouble(input.replace(',', '.'));
 	}
 
