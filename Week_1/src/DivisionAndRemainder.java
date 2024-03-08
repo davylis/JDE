@@ -35,6 +35,9 @@ public class DivisionAndRemainder {
 		int remainder2 = y % x;
 		System.out.println("The remainder of " + x + " / " + y + " is " + remainder1);
 		System.out.println("The remainder of " + y + " / " + x + " is " + remainder2);
+		
+		int result = x/y;
+		System.out.println(result);
 	}
 
 	private static double readDouble(Scanner input) {
