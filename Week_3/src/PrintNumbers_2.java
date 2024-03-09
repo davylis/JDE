@@ -13,7 +13,7 @@ public class PrintNumbers_2 {
 		// input number
 		System.out.print("Enter the middle number: ");
 		int middle = Integer.parseInt(input.nextLine());
-		//Scanner closer
+		// Scanner closer
 		input.close();
 		// print numbers
 		int count = 0;
@@ -26,17 +26,17 @@ public class PrintNumbers_2 {
 			count++;
 		}
 		if (count == 0) {
-		    System.out.println("0 numbers printed");
-		   return;
-		   }
+			System.out.println("0 numbers printed");
+			return;
+		}
 		System.out.println();
-		   String countOutput = "";
-		   countOutput += count + " ";
-		   if (count == 1) {
-		     countOutput += "number printed";
-		   } else {
-		     countOutput += "numbers printed";
-		   }
-		   System.out.println(countOutput);
-		 }
+		String countOutput = "";
+		countOutput += count + " ";
+		if (count == 1) {
+			countOutput += "number printed";
+		} else {
+			countOutput += "numbers printed";
+		}
+		System.out.println(countOutput);
 	}
+}
