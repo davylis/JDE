@@ -14,12 +14,13 @@ public class ValidatePrice {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		DecimalFormat twoDecimal = new DecimalFormat("0.00");
+		double priceAfterVAT = 0;
 
 		try {
 			System.out.print("Enter the price before VAT: ");
-			double price = readDouble(scanner);
+			double price = Double.parseDouble(scanner.nextLine().replace(',', '.'));
 
-			double priceAfterVAT = price * 1.25;
+			priceAfterVAT = price * 1.25;
 
 			System.out.println();
 			System.out.println("The VAT inclusive price is " + twoDecimal.format(priceAfterVAT));
@@ -31,8 +32,8 @@ public class ValidatePrice {
 		scanner.close();
 	}
 
-	private static double readDouble(Scanner scanner) {
-		return Double.parseDouble(scanner.nextLine().replace(',', '.'));
-	}
+//	private static double readDouble(Scanner scanner) {
+//		return Double.parseDouble(scanner.nextLine().replace(',', '.'));
+//	}
 
 }

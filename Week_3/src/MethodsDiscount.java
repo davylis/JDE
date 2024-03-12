@@ -18,19 +18,15 @@ public class MethodsDiscount {
 		return result;
 	}
 
-	private static double readDouble(String input) {
-		return Double.parseDouble(input.replace(',', '.'));
-	}
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		DecimalFormat formatter = new DecimalFormat("0.00");
 
 		System.out.print("Enter list price: ");
-		double listPrice = readDouble(scanner.nextLine());
+		double listPrice = Double.parseDouble(scanner.nextLine().replace(',', '.'));
 
 		System.out.print("Enter selling price: ");
-		double sellingPrice = readDouble(scanner.nextLine());
+		double sellingPrice = Double.parseDouble(scanner.nextLine().replace(',', '.'));
 
 		System.out.println();
 

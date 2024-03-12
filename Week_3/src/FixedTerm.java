@@ -45,9 +45,10 @@ public class FixedTerm {
 		incomeTax /= 100;
 		double balance = deposit;
 		double totalInterest = 0.00;
+		double interest  = 0.00;
 		
 		for(int y = 1; y <= years; y++) {
-			double interest = balance * rate;
+			interest = balance * rate;
 			balance += interest;
 			totalInterest += interest;
 			

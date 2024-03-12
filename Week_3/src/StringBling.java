@@ -19,7 +19,6 @@ public class StringBling {
 		//create variables we use
 		String longest = "";
 		String word;
-		boolean stop = false;
 		//input string
 		System.out.print("Enter first string: ");
 		word = input.nextLine();

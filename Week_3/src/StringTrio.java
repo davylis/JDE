@@ -29,5 +29,6 @@ public class StringTrio {
 		} else {
 			System.out.println("The strings are not equal");
 		}
+		input.close();
 	}
 }
