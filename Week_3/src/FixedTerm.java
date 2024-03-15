@@ -55,6 +55,7 @@ public class FixedTerm {
 			String output = "Year " + y + ": " + twoDecimal.format(interest) + " | " + twoDecimal.format(balance);
             System.out.println(output);
 		}
+		//double afterTax = totalInterest *( 1.0-incomeTax);
 		double afterTax = totalInterest * incomeTax;
 		System.out.printf("\nThe interest after tax is %.2f\n", totalInterest - afterTax);
 		System.out.printf("The remaining balance after tax is %.2f\n", deposit + (totalInterest - afterTax));

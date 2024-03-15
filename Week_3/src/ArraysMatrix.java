@@ -11,7 +11,7 @@ public class ArraysMatrix {
 			//empty string called 'line' which will be used to construct the output line for each row.
 			String line = "";
 			//m1[0].length gives the number of columns in the matrix m1. It assumes that all rows have the same number of columns.
-			for(int j = 0; j < m1[0].length; j++) {
+			for(int j = 0; j < m1.length; j++) {
 				//calculates the sum of corresponding elements from matrices m1 and m2 for the current row and column. It converts the sum to a string and appends it to the line string, followed by a space.
 				line += Integer.toString(m1[i][j] + m2[i][j]) + " ";
 			}

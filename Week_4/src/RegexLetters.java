@@ -13,7 +13,7 @@ public class RegexLetters {
 		System.out.print("Enter a string: ");
 		String userString = input.nextLine();
 		
-		String regex = "(?i)[aeiouyåäöÅÄÖ]*";
+		String regex = "(?i)[aeiouyåäöÅÄÖ]+";
 		if(Pattern.matches(regex, userString)) {
 			System.out.println("Vowels only");
 		}else {

@@ -16,8 +16,8 @@ public class RegexStudentNumber {
 		System.out.print("Enter student number: ");
 		String studentNumber = input.nextLine();
 		//define the regular expression pattern
-		String regex = "^2\\d{7}$";
-		if(Pattern.matches(regex, studentNumber)) {
+		//String regex = "^2\\d{7}$";
+		if(studentNumber.matches("^2\\d{7}$")) {
 			System.out.print("OK");	
 		}else {
 			System.out.print("Invalid student number");

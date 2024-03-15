@@ -51,6 +51,8 @@ public class ObjectsSongArrayList {
 		System.out.println("=== List of songs ===");
 		for (Song s : songs) {
 			System.out.println(s.getArtist() + ": " + s.getName() + " (" + s.getYear() + ")");
+			System.out.println();
+			System.out.println(s);
 		}
 	}
 }

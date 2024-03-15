@@ -24,12 +24,12 @@ class ClockTime {
 		if (hours < 0 || minutes < 0)
 			return;
 		this.minutes += minutes;
-		if(this.minutes > 59) {
+		if(this.minutes >= 59) {
 			hours += this.minutes/60 ;
 			this.minutes %= 60;
 		}
 		this.hours += hours;
-		if(this.hours > 23) {
+		if(this.hours >= 23) {
 			this.hours %= 24;
 		}
 		

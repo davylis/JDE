@@ -10,7 +10,6 @@ method should input the values from the user and save them to an array. Finally,
 should compute the required descriptive statistics from the sample data and display them. See the
 example output for more details.
  */
-import java.util.Iterator;
 import java.util.Scanner;
 import java.lang.Math;
 import java.text.DecimalFormat;
@@ -87,7 +86,7 @@ public class ArraysDeviation {
 		// checking if number is above 4
 		if (number < 4) {
 			System.out.println("Sorry, at least 4 values required");
-			System.exit(0);
+			return;
 		}
 
 		int[] arrr = new int[number];
@@ -116,13 +115,10 @@ public class ArraysDeviation {
 
 		System.out.printf("Sample standard deviation: %.1f\n", ArraysLibrary.standardDeviation(arrr));
 		System.out.print("Sample data: ");
-		String result = "";
 		for (int j = 0; j < copyOfArrr.length; j++) {
 			System.out.print(copyOfArrr[j] + " ");
 		}
 	}
 
-	private static double readDouble(Scanner input) {
-		return Double.parseDouble(input.nextLine().replace(',', '.'));
-	}
+
 }

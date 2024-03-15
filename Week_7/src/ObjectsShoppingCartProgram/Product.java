@@ -13,19 +13,19 @@ public class Product {
 		this.productPrice = price;
 	}
 	public int getProductNumber() {
-		return productNumber;
+		return this.productNumber;
 	}
 	public void setProductNumber(int productNumber) {
 		this.productNumber = productNumber;
 	}
 	public String getProductName() {
-		return productName;
+		return this.productName;
 	}
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 	public double getProductPrice() {
-		return productPrice;
+		return this. productPrice;
 	}
 	public void setProductPrice(double productPrice) {
 		this.productPrice = productPrice;

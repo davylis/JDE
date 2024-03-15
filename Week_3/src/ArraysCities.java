@@ -14,24 +14,24 @@ import java.util.Set;
 
 public class ArraysCities {
 
-	public static String[] AlphabeticalOrder(String cities[]){
+//	public static String[] AlphabeticalOrder(String cities[]){
 		
-		String temp;
-		for (int i = 0; i < cities.length; i++) {
-			for (int j = 0; j < cities.length; j++) {
-				if(cities[i].compareTo(cities[j]) > 0){
-					temp = cities[i];
-					cities[i]=cities[j];
-					cities[j]=temp;
-				}
-			}
-		}
-		return cities;
-	}
+//		String temp;
+//		for (int i = 0; i < cities.length; i++) {
+//			for (int j = 0; j < cities.length; j++) {
+//				if(cities[i].compareTo(cities[j]) > 0){
+//					temp = cities[i];
+//					cities[i]=cities[j];
+//					cities[j]=temp;
+//				}
+//			}
+//		}
+//		return cities;
+//	}
 	
-	public static List<String> DistinctCities(String cities[]) {
+	public static ArrayList<String> DistinctCities(String cities[]) {
 		
-		List<String> distinctCities = new ArrayList<String>();
+		ArrayList<String> distinctCities = new ArrayList<String>();
 		for(int i = 0; i < cities.length; i++) {
 			if(isInArray(cities[i], distinctCities) == false) {
 				distinctCities.add(cities[i]);
@@ -71,7 +71,7 @@ public class ArraysCities {
         }
         System.out.println();
 
-        List<String>distinctCities = DistinctCities(cities);
+        ArrayList<String>distinctCities = DistinctCities(cities);
         Collections.sort(distinctCities);
       
         System.out.print("Distinct city names: ");
